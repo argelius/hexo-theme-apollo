@@ -1,7 +1,7 @@
 menu:
     Blog: /
     Archive: /archives/
-    GitHub: https://github.com/zonky
+    GitHub: https://github.com/zonkytech
     Rss: /atom.xml
 
 favicon: /favicon.png
@@ -9,7 +9,7 @@ logo: /favicon.png
 
 # Comment
 # e.g disqus: seansun
-disqus:
+disqus: zonkytech-blog
 duoshuo:
 
 # Analytics
@@ -17,4 +17,4 @@ duoshuo:
 ga: UA-65933410-1
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2016
