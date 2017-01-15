@@ -1,42 +1,45 @@
-![hexo-theme-apollo](https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png)
+Theme for the Zonkytech blog. Forked from [Apollo](https://github.com/pinggod/hexo-theme-apollo).
 
-## 文档
-
-- [中文文档](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md)
-- [Document](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-en.md)
-
-## 安装
-
-[![asciicast](https://asciinema.org/a/emrvroa9054hz6k8ise0uxh2u.png)](https://asciinema.org/a/emrvroa9054hz6k8ise0uxh2u)
+## Usage
 
 ``` bash
-hexo init Blog 
-cd Blog 
+hexo init blog
+cd blog
 npm install
-npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive hexo-authors
+git clone https://github.com/zonkytech/hexo-theme-zonky.git themes/zonky
 ```
 
-## 启用
+## Configuration
 
-修改 `_config.yml` 的 `theme` 配置项为 `apollo`:
+Edit the `_config.yml` file and set the them to "zonky".
 
 ```yaml
-theme: apollo
+theme: zonky
 
-# 在归档页面显示所有文章
-# 需要上面安装的 hexo-generator-archive 插件支持
+# Archive generator
 archive_generator:
     per_page: 0
     yearly: false
     monthly: false
     daily: false
+
+# Authors
+authors:
+  default:
+    name: 'Default poster'
+  alice:
+    name: Alice
+    email: alice@example.com
+  bob:
+    name: Bob
+    gravatar: 4b9bb80620f03eb3719e0a061c14283d
 ```
 
-## 更新
+## Update
 
 ``` bash
-cd themes/apollo 
+cd themes/zonky
 git pull
 ```
 
