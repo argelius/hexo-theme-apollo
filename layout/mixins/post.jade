@@ -6,6 +6,13 @@ mixin postInfo(item)
             != item.author.name
         .post-date
             != full_date(item.date, 'll')
+        .post-share
+            .post-share-twitter
+              a.twitter-share-button(
+                href="https://twitter.com/intent/tweet?text=" + item.title
+              ) Tweet
+            .post-share-facebook
+
 
 //- Index Page
 mixin posts()
