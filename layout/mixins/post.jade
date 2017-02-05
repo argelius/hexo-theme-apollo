@@ -8,11 +8,14 @@ mixin postInfo(item)
             != full_date(item.date, 'll')
         .post-share
             .post-share-twitter
-              a.twitter-share-button(
-                href="https://twitter.com/intent/tweet?text=" + item.title
-              ) Tweet
+                a.twitter-share-button(
+                  href="https://twitter.com/intent/tweet?text=" + item.title
+                ) Tweet
             .post-share-facebook
-
+                .fb-share-button(
+                  data-href=url,
+                  data-layout="button_count"
+                )
 
 //- Index Page
 mixin posts()

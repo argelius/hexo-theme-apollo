@@ -35,10 +35,12 @@
         }
 
         .post-share {
-            &-twitter {
-            }
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
 
             &-facebook {
+                margin-top: -4px;
             }
         }
     }
