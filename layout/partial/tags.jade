@@ -1,0 +1,6 @@
+h2.related-tags Related tags
+.tags
+    - site.tags.sort('name').each(tag => {
+        a.tag(href=`${config.root}${tag.path}`)= tag.name
+    - })
+

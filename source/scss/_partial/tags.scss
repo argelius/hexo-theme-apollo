@@ -1,0 +1,22 @@
+$margin: 4px;
+
+.related-tags {
+    text-align: center;
+}
+
+.tags {
+    display: flex;
+    margin: 0 -$margin;
+
+    .tag {
+        padding: 2px 6px;
+        background-color: #eee;
+        margin: $margin;
+
+        &:hover {
+            background-color: #bbb;
+            color: #fff;
+        }
+    }
+}
+
